@@ -1,11 +1,15 @@
 def sumar(a, b):
     return a + b
 
+def restar(a, b):
+    return a - b
+
 
 
 while True:
     print("Opciones:")
     print("1. Sumar")
+    print("2. Restar")
     print("5. Salir")
 
     opcion = input("Ingrese el número de la operación que desea realizar: ")
@@ -19,6 +23,10 @@ while True:
 
     if opcion == '1':
         print("Resultado:", sumar(num1, num2))
+
+    elif opcion == '2':
+        print("Resultado:", restar(num1, num2))
+        
     else:
         print("Opción inválida")
 
